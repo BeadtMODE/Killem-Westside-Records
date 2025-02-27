@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "2e496913-5471-466b-bb2a-8a02dad1ce44",
+		"_postman_id": "e1c4d64b-b5cb-4af7-8714-347f81442678",
 		"name": "api.sandbox.paypal.com",
 		"description": "Owner Test\n\n<img src=\"https://content.pstmn.io/cedc8d2e-4739-4d17-b646-12589a4d0391/MjAyNDAxMDZfMDAwNTAzLmpwZw==\" alt=\"\" height=\"329\" width=\"329\">",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "19151314-2e496913-5471-466b-bb2a-8a02dad1ce44"
+		"_uid": "19151314-e1c4d64b-b5cb-4af7-8714-347f81442678"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "11e8eb39-14a8-45f5-b09e-44d5e3edea81",
+						"id": "870598fa-1b94-429e-bea8-4731b56914df",
 						"exec": [
 							""
 						],
@@ -22,7 +22,7 @@
 					}
 				}
 			],
-			"id": "b4f85733-ba8b-4632-93c3-6f7a497a727a",
+			"id": "c0eedbb1-ee3f-4e5b-92e3-491b6004902f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -69,7 +69,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "95f11786-5153-4e57-954e-c6c81e6c3d26",
+				"id": "eac16e17-d16e-400c-952c-1eb2c9d5415d",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -80,7 +80,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7988ceac-625a-4b43-a2a1-d944b5ff60c1",
+				"id": "2502feda-3bcd-4d60-8f05-6f4a7717758f",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
