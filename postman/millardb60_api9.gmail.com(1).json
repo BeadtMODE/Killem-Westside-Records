@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "8daa0fbe-1456-40f2-a939-29beb0e95100",
+		"name": "millardb60_api9.gmail.com",
+		"description": "<img src=\"https://content.pstmn.io/5b7e0326-144f-4a64-bd29-7f1c1fe864e3/NGIyNTViMTctYWQ1NS00YjE4LWJiNzMtMWYxZWQ3MjZmOWM5LTFfYWxsXzM2Ni5qcGc=\">\n\nTest Call",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "19151314-8daa0fbe-1456-40f2-a939-29beb0e95100"
+	},
+	"item": [
+		{
+			"name": "access_token$production$wpw3gn5kmywp5frc$03880228e02733bef25b935db795db46",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7c0b9cdb-3777-44d7-a34a-154e3fc79eca",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "9f744218-95d8-4be8-a912-bdf10c423e4f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "9SPS4ZJXXTCMBHTJ",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "millardb60_api9.gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://paypal.me/CMRFF?country.x=US&locale.x=en_US",
+					"protocol": "https",
+					"host": [
+						"paypal",
+						"me"
+					],
+					"path": [
+						"CMRFF"
+					],
+					"query": [
+						{
+							"key": "country.x",
+							"value": "US"
+						},
+						{
+							"key": "locale.x",
+							"value": "en_US"
+						}
+					]
+				},
+				"description": "Test Call"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "9SPS4ZJXXTCMBHTJ",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "millardb60_api9.gmail.com",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "eede4c0b-1aba-4a52-bdf8-0138b4973941",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5ec7f0bc-370e-4610-947f-b0ae72ea0bbb",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"pm.test(\"Successful POST request\", function () {",
+					"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+					"});"
+				]
+			}
+		}
+	]
+}
