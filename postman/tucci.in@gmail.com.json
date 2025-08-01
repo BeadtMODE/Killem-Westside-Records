@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "ce0fdc1c-6399-4ed1-9c7e-6c95813e9923",
-		"name": "api-m.sandbox.paypal.com/v1/oauth2/token",
-		"description": "<img src=\"https://content.pstmn.io/105b9bf0-c32a-4d3e-837f-399905831fcd/NGIyNTViMTctYWQ1NS00YjE4LWJiNzMtMWYxZWQ3MjZmOWM5LTFfYWxsXzM2Ni5qcGc=\" alt=\"\" height=\"399\" width=\"276\">\n\nTest Call",
+		"_postman_id": "29dd3e3c-2f8d-4bef-ad89-8ed0377e0cb4",
+		"name": "tucci.in@gmail.com",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "19151314-ce0fdc1c-6399-4ed1-9c7e-6c95813e9923"
+		"_uid": "19151314-29dd3e3c-2f8d-4bef-ad89-8ed0377e0cb4"
 	},
 	"item": [
 		{
@@ -13,9 +12,10 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ba1d76f3-d6ba-469c-bde1-4304f5014da6",
+						"id": "eae9837f-9630-44fd-b7a3-a630bb585565",
 						"exec": [
 							"try {",
+							"pm.variables.get(\"variable_key\");",
 							"    const response = await pm.sendRequest({",
 							"        url: \"https://postman-echo.com/get\",",
 							"        method: \"GET\"",
@@ -25,7 +25,6 @@
 							"} catch (err) {",
 							"    console.error(err);",
 							"}",
-							"pm.variables.get(\"variable_key\");",
 							"pm.variables.set(\"variable_key\", \"variable_value\");"
 						],
 						"type": "text/javascript",
@@ -33,7 +32,7 @@
 					}
 				}
 			],
-			"id": "b77c7ca6-d484-4c1d-8d05-6e507d0ca41d",
+			"id": "d5d7805b-ca54-42b6-b6e6-99374bfac675",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -47,16 +46,16 @@
 					"mode": "urlencoded",
 					"urlencoded": [
 						{
-							"key": "locale.x",
-							"value": "en_US",
-							"type": "text",
-							"uuid": "b013b432-2eed-497c-b320-8e42a08fdf13"
-						},
-						{
 							"key": "country.x",
 							"value": "US",
 							"type": "text",
-							"uuid": "cb526e42-ce76-42c6-83fb-13279c612f77"
+							"uuid": "b219564c-006e-4638-9013-b4e6363d7f02"
+						},
+						{
+							"key": "locale.x",
+							"value": "en_US",
+							"type": "text",
+							"uuid": "74eee6bf-c339-47b0-bedb-0351a9d8101d"
 						}
 					]
 				},
@@ -80,8 +79,7 @@
 							"value": "en_US"
 						}
 					]
-				},
-				"description": "Test Call"
+				}
 			},
 			"response": []
 		}
@@ -93,7 +91,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f69f1287-ed5f-43ab-bd63-66fccada3993",
+				"id": "401a0d75-a1fe-46fa-9f35-08c8526e3cb2",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -104,7 +102,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "4883a050-d1ea-45e7-b1bf-6c7b1d59726a",
+				"id": "209478f9-af19-4b9d-af31-190eb016ca3d",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -116,9 +114,9 @@
 					"",
 					"    console.log(response.json());",
 					"} catch (err) {",
+					"    pm.variables.get(\"variable_key\");",
 					"    console.error(err);",
 					"}",
-					"pm.variables.get(\"variable_key\");",
 					"pm.variables.set(\"variable_key\", \"variable_value\");"
 				]
 			}
@@ -126,7 +124,7 @@
 	],
 	"variable": [
 		{
-			"id": "c9499fd9-6fb9-4576-b2bd-da454b3dff35",
+			"id": "0b6a051a-3295-4a8a-9ea7-847ab6f3d3ee",
 			"key": "variable_key",
 			"value": "",
 			"type": "string"
