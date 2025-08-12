@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "29dd3e3c-2f8d-4bef-ad89-8ed0377e0cb4",
+		"_postman_id": "5e0ddde3-483a-494d-aba4-e26e2e90718e",
 		"name": "tucci.in@gmail.com",
+		"description": "Test Call .\n\n<img src=\"https://content.pstmn.io/94eb46c7-f168-4802-a6bc-8b1a8abd1717/MDU5ODJlN2MtY2ZmOC00OTRkLWIzZGYtNTUyYTgyYzM3YjMyLTFfYWxsXzI1LmpwZw==\" alt=\"\">\n\n|  |  |\n| --- | --- |\n|  |  |",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "19151314-29dd3e3c-2f8d-4bef-ad89-8ed0377e0cb4"
+		"_uid": "19151314-5e0ddde3-483a-494d-aba4-e26e2e90718e"
 	},
 	"item": [
 		{
@@ -12,10 +13,9 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "eae9837f-9630-44fd-b7a3-a630bb585565",
+						"id": "8b31989e-6e5f-4b8e-bfba-30b6f865b3ee",
 						"exec": [
 							"try {",
-							"pm.variables.get(\"variable_key\");",
 							"    const response = await pm.sendRequest({",
 							"        url: \"https://postman-echo.com/get\",",
 							"        method: \"GET\"",
@@ -25,6 +25,7 @@
 							"} catch (err) {",
 							"    console.error(err);",
 							"}",
+							"pm.variables.get(\"variable_key\");",
 							"pm.variables.set(\"variable_key\", \"variable_value\");"
 						],
 						"type": "text/javascript",
@@ -32,7 +33,7 @@
 					}
 				}
 			],
-			"id": "d5d7805b-ca54-42b6-b6e6-99374bfac675",
+			"id": "47d04ad0-23ab-496c-9803-7c60eb8114ea",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -40,7 +41,7 @@
 				"auth": {
 					"type": "basic"
 				},
-				"method": "POST",
+				"method": "APPROVE",
 				"header": [],
 				"body": {
 					"mode": "urlencoded",
@@ -49,13 +50,13 @@
 							"key": "country.x",
 							"value": "US",
 							"type": "text",
-							"uuid": "b219564c-006e-4638-9013-b4e6363d7f02"
+							"uuid": "5b86845a-1129-4980-8ca7-f6d1854cfbdd"
 						},
 						{
-							"key": "locale.x",
+							"key": "local.x",
 							"value": "en_US",
 							"type": "text",
-							"uuid": "74eee6bf-c339-47b0-bedb-0351a9d8101d"
+							"uuid": "7395c959-6bad-4403-bd35-77693680bc15"
 						}
 					]
 				},
@@ -91,7 +92,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "401a0d75-a1fe-46fa-9f35-08c8526e3cb2",
+				"id": "53cf6228-e0e0-47c5-b41c-41a45f937185",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -102,7 +103,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "209478f9-af19-4b9d-af31-190eb016ca3d",
+				"id": "5c270b3a-1973-4e15-a4ed-f9e0e39c5731",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -114,9 +115,9 @@
 					"",
 					"    console.log(response.json());",
 					"} catch (err) {",
-					"    pm.variables.get(\"variable_key\");",
 					"    console.error(err);",
 					"}",
+					"pm.variables.get(\"variable_key\");",
 					"pm.variables.set(\"variable_key\", \"variable_value\");"
 				]
 			}
@@ -124,7 +125,7 @@
 	],
 	"variable": [
 		{
-			"id": "0b6a051a-3295-4a8a-9ea7-847ab6f3d3ee",
+			"id": "b844b277-3c91-48cf-8665-b5648658d7cc",
 			"key": "variable_key",
 			"value": "",
 			"type": "string"
